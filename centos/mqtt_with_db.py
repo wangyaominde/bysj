@@ -11,7 +11,6 @@ def sjk():
 def xrsj(a):
 	db = sjk()
 	cursor = db.cursor()
-#	sql = "INSERT INTO bysj(wendu,shidu,mq)VALUES('%d','%d','%d')"%(a[0],a[1],a[2])
 	cursor.execute('insert into bysj values("%d","%d","%d")'%(a[0],a[1],a[2]))
 	db.commit()
 	db.close
