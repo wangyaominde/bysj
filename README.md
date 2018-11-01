@@ -9,7 +9,7 @@ esp8266是mcu端的设计
 ===================================================================================================
 # 一、先使用linux服务器搭建mqtt服务 #
 
-wget http://emqtt.com/downloads/3006/centos7  //先下载emqttd
+wget http://emqtt.com/downloads/3006/centos7  //先下载emqttd \n
 安装emqttd具体请看 http://emqtt.com/docs/v2/install.html
 
 # 二、使用linux服务器搭建收集程序 #
