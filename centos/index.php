@@ -5,7 +5,7 @@
    </head>
    <body style="height: 100%; margin: 0">
    <?php
-$servername = "localhost";
+$servername = "localhost";  #数据库配置操作
 $username = "****";
 $password = "*******";
 $dbname = "****";
@@ -27,7 +27,7 @@ if (mysqli_num_rows($result) > 0) {
 	$wdarr[]=$row['wendu'];
 	$sdarr[]=$row['shidu'];
 	$mqarr[]=$row['mq'];
-	
+
    }
 } else {
     echo "0 结果";
@@ -111,8 +111,8 @@ option = {
             areaStyle: {normal: {}},
             data:<?php echo json_encode($mqarr);?>
         }
-        
-       
+
+
     ]
 };
 ;
