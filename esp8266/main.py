@@ -13,10 +13,7 @@ def sub_cb(topic, msg): #回调函数
 sta_if = network.WLAN(network.STA_IF)
 sta_if.active(True)
 sta_if.connect("wifiname","wifipass")    #输入wifi的账号密码
-
-while not sta_if.isconnected():     #判断是否连接成功
-    machine.idle()
-print("Connected to Wifi\n")
+time.sleep(2) #加入延迟等待连接成功
 
 
 #==========================mqtt===============================#
